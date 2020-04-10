@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Results</title>
+</head>
+<body>
+	<h1>Results for <%= query %></h1>
+
+	<a href="/">
+		&larr; Back Home
+	</a>
+
+	<% results.forEach(r => { %>
+		<div>
+			<h2>
+				<%= r.Title %> (<%= r.Year %>)
+			</h2>
+			<img src="<%= r.Poster %>" alt="Poster">
+		</div>
+
+<% }) %>
+</body>
+</html>
